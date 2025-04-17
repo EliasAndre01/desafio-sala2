@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Zen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-emerald-50 text-emerald-900 font-sans">
+
+  <!-- ✅ Navbar fixa -->
+  <header class="w-full bg-white shadow-md fixed top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-2xl font-semibold text-emerald-800 hover:text-emerald-700 transition-all">Bruce Lee</span>
+      <nav class="flex space-x-6 text-sm font-medium text-emerald-700">
+        <a href="#sobre" class="hover:text-emerald-900 transition-all">Sobre</a>
+        <a href="#projetos" class="hover:text-emerald-900 transition-all">Projetos</a>
+        <a href="#contato" class="hover:text-emerald-900 transition-all">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="min-h-screen flex items-center justify-center px-2 pt-24"> <!-- pt-24 para compensar navbar -->
+    <div class="flex flex-row w-full max-w-7xl shadow-xl rounded-xl overflow-hidden bg-white animate-fade-in-down flex-wrap">
+
+      <!-- Texto à esquerda (compacto) -->
+      <div class="flex flex-col justify-center items-start p-6 w-full sm:w-5/12 bg-white">
+        <!-- Foto de Perfil -->
+        <div class="mb-4 w-24 h-24 rounded-full overflow-hidden border-4 border-emerald-600">
+          <img 
+            src="https://media.gettyimages.com/id/526769353/pt/foto/actor-and-martial-artist-bruce-lee-rehearsing-on-the-set-of-the-film-enter-the-dragon-hong-kong.jpg?s=612x612&w=0&k=20&c=hBs_uz6xdjQ7CZy-2Obb3UlyggfKeOpxtohHsKyHroI="
+            alt="Bruce Lee"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        
+        <h1 class="text-4xl font-bold mb-2 text-emerald-900">Bruce Lee</h1>
+        <h2 class="text-lg text-emerald-700 mb-2">Filósofo, Artista Marcial & Ator</h2>
+        <p class="text-sm mb-4 text-emerald-800 leading-snug">
+          "O conhecimento não é o que você sabe, mas o que você faz com o que sabe."
+        </p>
+        <div class="flex gap-3">
+          <a href="#projetos" class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition duration-300 shadow-lg text-sm">Projetos</a>
+          <a href="#contato" class="border border-emerald-700 text-emerald-700 px-5 py-2 rounded-full hover:bg-emerald-50 transition duration-300 shadow-lg text-sm">Contato</a>
+        </div>
+      </div>
+
+      <!-- Imagem à direita (maior) -->
+      <div class="w-full sm:w-7/12 h-[400px] sm:h-[600px] overflow-hidden rounded-lg">
+        <img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/fc/fc/cb/caption.jpg?w=1200&h=-1&s=1"
+          alt="Imagem Zen"
+          class="w-full h-full object-cover brightness-90 transition-all duration-500 hover:brightness-110"
+        />
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Animação -->
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      .animate-fade-in-down {
+        animation: fade-in-down 1s ease-out;
+      }
+      @keyframes fade-in-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
+
+</body>
+</html>
