@@ -43,7 +43,7 @@ Clone o repositório
 bash
 Copiar
 Editar
-git clone https://github.com/usuario/brucelee-portfolio.git
+git clone https://github.com/EliasAndre01/desafio-sala2
 Acesse o diretório
 
 bash
